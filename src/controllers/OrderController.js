@@ -272,19 +272,19 @@ class OrderController {
         return res.status(404).json({ error: '订单不存在' });
       }
 
-      const package = order.packages.id(packageId);
-      if (!package) {
+      const packageItem = order.packages.id(packageId);
+      if (!packageItem) {
         return res.status(404).json({ error: '包裹不存在' });
       }
 
-      package.status = status;
+      packageItem.status = status;
       await order.save();
 
       res.json({
         success: true,
         package: {
-          id: package._id,
-          status: package.status
+          id: packageItem._id,
+          status: packageItem.status
         }
       });
     } catch (error) {
