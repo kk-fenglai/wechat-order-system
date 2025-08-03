@@ -10,15 +10,17 @@ const orderRoutes = require('./src/routes/orders');
 
 const app = express();
 
-// 连接数据库
-mongoose.connect(config.database.url, config.database.options)
-  .then(() => {
-    console.log('✅ 数据库连接成功');
-  })
-  .catch((error) => {
-    console.error('❌ 数据库连接失败:', error);
-    process.exit(1);
-  });
+// 连接数据库（暂时注释掉，稍后配置）
+// mongoose.connect(config.database.url, config.database.options)
+//   .then(() => {
+//     console.log('✅ 数据库连接成功');
+//   })
+//   .catch((error) => {
+//     console.error('❌ 数据库连接失败:', error);
+//     process.exit(1);
+//   });
+
+console.log('⚠️ 数据库连接已暂时禁用，请稍后配置MongoDB');
 
 // 中间件
 app.use(cors());
@@ -87,18 +89,20 @@ app.listen(PORT, HOST, () => {
 // 优雅关闭
 process.on('SIGTERM', () => {
   console.log('收到 SIGTERM 信号，正在关闭服务器...');
-  mongoose.connection.close(() => {
-    console.log('数据库连接已关闭');
-    process.exit(0);
-  });
+  // mongoose.connection.close(() => {
+  //   console.log('数据库连接已关闭');
+  //   process.exit(0);
+  // });
+  process.exit(0);
 });
 
 process.on('SIGINT', () => {
   console.log('收到 SIGINT 信号，正在关闭服务器...');
-  mongoose.connection.close(() => {
-    console.log('数据库连接已关闭');
-    process.exit(0);
-  });
+  // mongoose.connection.close(() => {
+  //   console.log('数据库连接已关闭');
+  //   process.exit(0);
+  // });
+  process.exit(0);
 });
 
 module.exports = app; 
