@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: wechat-order-management
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
+      - key: MONGODB_URI
+        sync: false
+      - key: WECHAT_APP_ID
+        sync: false
+      - key: WECHAT_APP_SECRET
+        sync: false
+      - key: WECHAT_TOKEN
+        sync: false
+      - key: WECHAT_ENCODING_AES_KEY
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: WECHAT_MCH_ID
+        sync: false
+      - key: WECHAT_API_KEY
+        sync: false
+      - key: WECHAT_CERT_PATH
+        sync: false
+      - key: EMAIL_HOST
+        sync: false
+      - key: EMAIL_PORT
+        sync: false
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false 

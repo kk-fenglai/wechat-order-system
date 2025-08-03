@@ -54,7 +54,7 @@ npm run dev
 npm run build
 ```
 
-### 方式二：微信云开发（推荐）
+### 方式二：微信云开发
 ```bash
 # 运行快速设置脚本
 cloud-setup.bat
@@ -62,6 +62,15 @@ cloud-setup.bat
 # 或手动安装云函数依赖
 cd cloudfunctions/wechat-message
 npm install
+```
+
+### 方式三：Render云部署（推荐）
+```bash
+# 运行Render部署脚本
+deploy-render.bat
+
+# 或查看详细部署指南
+docs/render-deploy-guide.md
 ```
 
 ## 配置说明
@@ -77,7 +86,10 @@ npm install
 3. 部署云函数到云端
 4. 配置微信公众号服务器地址
 
-详细部署指南请查看：[云开发部署指南](docs/cloud-deployment.md)
+详细部署指南请查看：
+- [云开发部署指南](docs/cloud-deployment.md)
+- [Render云部署指南](docs/render-deploy-guide.md)
+- [MongoDB Atlas设置指南](docs/mongodb-atlas-setup.md)
 
 ## 目录结构
 ```
@@ -94,5 +106,7 @@ npm install
 ├── docs/              # 文档
 ├── cloudbase.json     # 云开发配置
 ├── cloud-setup.bat    # 云开发快速设置脚本
+├── deploy-render.bat  # Render部署脚本
+├── render.yaml        # Render配置文件
 └── start.bat          # 本地启动脚本
 ``` 
