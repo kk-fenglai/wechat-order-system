@@ -1,0 +1,19 @@
+{
+  "envId": "your-env-id",
+  "functionRoot": "./cloudfunctions",
+  "functions": [
+    {
+      "name": "wechat-message",
+      "runtime": "Nodejs16.13",
+      "memory": 128,
+      "timeout": 5,
+      "triggers": [
+        {
+          "name": "wechatTrigger",
+          "type": "http",
+          "config": "http://your-env-id.service.tcloudbase.com/wechat-message"
+        }
+      ]
+    }
+  ]
+} 

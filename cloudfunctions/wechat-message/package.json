@@ -1,0 +1,11 @@
+{
+  "name": "wechat-message",
+  "version": "1.0.0",
+  "description": "微信公众号消息处理云函数",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "^2.6.3",
+    "crypto": "^1.0.1",
+    "xml2js": "^0.6.2"
+  }
+} 

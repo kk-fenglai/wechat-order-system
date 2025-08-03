@@ -1,0 +1,22 @@
+{
+  "version": "2.0",
+  "envId": "your-env-id",
+  "framework": {
+    "name": "wechat-order-system",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "entry": "./server.js",
+          "path": "/",
+          "name": "wechat-order-system",
+          "installCommand": "npm install",
+          "buildCommand": "npm run build",
+          "startCommand": "npm start",
+          "platform": "node",
+          "version": "16.13"
+        }
+      }
+    }
+  }
+} 
