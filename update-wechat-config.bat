@@ -15,8 +15,8 @@ echo.
 echo # 微信公众号配置 - 真实配置
 echo WECHAT_APP_ID=wxd5492d5bc0730a21
 echo WECHAT_APP_SECRET=9c90e33c11a2c7dbfc8d74a0cb5a6487
-echo WECHAT_TOKEN=wechat_order_system_2024_token_abc123
-echo WECHAT_ENCODING_AES_KEY=abcdefghijklmnopqrstuvwxyz123456789012345678901
+echo WECHAT_TOKEN=wechatordersystem2025tokenabc123
+echo WECHAT_ENCODING_AES_KEY=0TlgABvA4dZbW1zylmq8Lri4GwrbPu1hZEGkhyeAx7
 echo.
 echo # 数据库配置 - MongoDB Atlas
 echo MONGODB_URI=mongodb+srv://wechat_admin:wechat_admin@cluster0.fkxi3rn.mongodb.net/wechat_order_system?retryWrites=true^&w=majority^&appName=Cluster0

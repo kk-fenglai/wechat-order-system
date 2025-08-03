@@ -23,8 +23,8 @@ JWT_SECRET=my_super_secret_jwt_key_2024
 # 真实微信配置
 WECHAT_APP_ID=wxd5492d5bc0730a21
 WECHAT_APP_SECRET=9c90e33c11a2c7dbfc8d74a0cb5a6487
-WECHAT_TOKEN=wechat_order_system_2024_token_abc123
-WECHAT_ENCODING_AES_KEY=abcdefghijklmnopqrstuvwxyz123456789012345678901
+WECHAT_TOKEN=wechatordersystem2025tokenabc123
+WECHAT_ENCODING_AES_KEY=0TlgABvA4dZbW1zylmq8Lri4GwrbPu1hZEGkhyeAx7
 
 # ========================================
 # 微信支付配置（可选）
@@ -51,5 +51,5 @@ EMAIL_PASS=your_email_password
 
 # 1. 确保在微信公众平台配置了IP白名单
 # 2. 服务器地址：https://your-app-name.onrender.com/api/wechat
-# 3. Token：wechat_order_system_2024_token_abc123
-# 4. EncodingAESKey：abcdefghijklmnopqrstuvwxyz123456789012345678901 
+# 3. Token：wechatordersystem2025tokenabc123
+# 4. EncodingAESKey：0TlgABvA4dZbW1zylmq8Lri4GwrbPu1hZEGkhyeAx7 

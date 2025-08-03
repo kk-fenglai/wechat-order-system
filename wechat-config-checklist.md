@@ -4,27 +4,11 @@
 
 - [x] 获取真实AppID：`wxd5492d5bc0730a21`
 - [x] 获取真实AppSecret：`9c90e33c11a2c7dbfc8d74a0cb5a6487`
+- [x] 获取真实Token：`wechatordersystem2025tokenabc123`
+- [x] 获取真实EncodingAESKey：`0TlgABvA4dZbW1zylmq8Lri4GwrbPu1hZEGkhyeAx7`
 - [x] 本地环境变量配置完成
 - [x] Access Token获取代码已实现
-
-## ⚠️ 需要解决的问题
-
-### 1. IP白名单配置（重要）
-
-**问题**：Access Token获取失败，IP不在白名单中
-**解决方案**：
-
-1. **登录微信公众平台**
-   - 访问：https://mp.weixin.qq.com
-   - 进入：开发 → 基本配置
-
-2. **配置IP白名单**
-   - 找到"IP白名单"设置
-   - 添加以下IP：
-     - `80.215.112.37`（你的当前IP）
-     - `0.0.0.0/0`（允许所有IP，仅用于开发测试）
-
-3. **保存配置**
+- [x] IP白名单已配置
 
 ## 🚀 下一步操作
 
@@ -40,8 +24,8 @@ HOST=0.0.0.0
 JWT_SECRET=my_super_secret_jwt_key_2024
 WECHAT_APP_ID=wxd5492d5bc0730a21
 WECHAT_APP_SECRET=9c90e33c11a2c7dbfc8d74a0cb5a6487
-WECHAT_TOKEN=wechat_order_system_2024_token_abc123
-WECHAT_ENCODING_AES_KEY=abcdefghijklmnopqrstuvwxyz123456789012345678901
+WECHAT_TOKEN=wechatordersystem2025tokenabc123
+WECHAT_ENCODING_AES_KEY=0TlgABvA4dZbW1zylmq8Lri4GwrbPu1hZEGkhyeAx7
 ```
 
 ### 2. 配置微信公众平台服务器
@@ -50,8 +34,8 @@ WECHAT_ENCODING_AES_KEY=abcdefghijklmnopqrstuvwxyz123456789012345678901
 
 1. **获取应用URL**：`https://your-app-name.onrender.com`
 2. **配置服务器地址**：`https://your-app-name.onrender.com/api/wechat`
-3. **配置Token**：`wechat_order_system_2024_token_abc123`
-4. **配置EncodingAESKey**：`abcdefghijklmnopqrstuvwxyz123456789012345678901`
+3. **配置Token**：`wechatordersystem2025tokenabc123`
+4. **配置EncodingAESKey**：`0TlgABvA4dZbW1zylmq8Lri4GwrbPu1hZEGkhyeAx7`
 
 ### 3. 测试验证
 
@@ -66,8 +50,8 @@ WECHAT_ENCODING_AES_KEY=abcdefghijklmnopqrstuvwxyz123456789012345678901
 ### 微信配置信息
 - **AppID**：`wxd5492d5bc0730a21`
 - **AppSecret**：`9c90e33c11a2c7dbfc8d74a0cb5a6487`
-- **Token**：`wechat_order_system_2024_token_abc123`
-- **EncodingAESKey**：`abcdefghijklmnopqrstuvwxyz123456789012345678901`
+- **Token**：`wechatordersystem2025tokenabc123`
+- **EncodingAESKey**：`0TlgABvA4dZbW1zylmq8Lri4GwrbPu1hZEGkhyeAx7`
 
 ### 数据库配置
 - **MongoDB URI**：已配置MongoDB Atlas连接
