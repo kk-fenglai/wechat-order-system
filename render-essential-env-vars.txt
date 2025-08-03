@@ -1,0 +1,19 @@
+# Render 必需环境变量配置
+# 复制以下内容到Render的环境变量配置中
+
+# MongoDB数据库连接
+MONGODB_URI=mongodb+srv://wechat_admin:wechat_admin@cluster0.fkxi3rn.mongodb.net/wechat_order_system?retryWrites=true&w=majority&appName=Cluster0
+
+# 应用环境配置
+NODE_ENV=production
+PORT=10000
+HOST=0.0.0.0
+
+# JWT密钥
+JWT_SECRET=my_super_secret_jwt_key_2024
+
+# 微信配置（占位符）
+WECHAT_APP_ID=temp_app_id
+WECHAT_APP_SECRET=temp_app_secret
+WECHAT_TOKEN=wechat_order_system_2024_token_abc123
+WECHAT_ENCODING_AES_KEY=abcdefghijklmnopqrstuvwxyz123456789012345678901 

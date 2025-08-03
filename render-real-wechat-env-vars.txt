@@ -1,0 +1,55 @@
+# Render 环境变量配置 - 真实微信配置
+# 复制以下内容到Render的环境变量配置中
+
+# ========================================
+# 必需的环境变量（必须配置）
+# ========================================
+
+# MongoDB数据库连接
+MONGODB_URI=mongodb+srv://wechat_admin:wechat_admin@cluster0.fkxi3rn.mongodb.net/wechat_order_system?retryWrites=true&w=majority&appName=Cluster0
+
+# 应用环境配置
+NODE_ENV=production
+PORT=10000
+HOST=0.0.0.0
+
+# JWT密钥
+JWT_SECRET=my_super_secret_jwt_key_2024
+
+# ========================================
+# 微信公众号配置（真实配置）
+# ========================================
+
+# 真实微信配置
+WECHAT_APP_ID=wxd5492d5bc0730a21
+WECHAT_APP_SECRET=9c90e33c11a2c7dbfc8d74a0cb5a6487
+WECHAT_TOKEN=wechat_order_system_2024_token_abc123
+WECHAT_ENCODING_AES_KEY=abcdefghijklmnopqrstuvwxyz123456789012345678901
+
+# ========================================
+# 微信支付配置（可选）
+# ========================================
+
+# 微信支付商户配置
+WECHAT_MCH_ID=your_wechat_mch_id
+WECHAT_API_KEY=your_wechat_api_key
+WECHAT_CERT_PATH=path/to/your/cert.pem
+
+# ========================================
+# 邮件配置（可选）
+# ========================================
+
+# 邮件服务器配置
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_email_password
+
+# ========================================
+# 重要提醒
+# ========================================
+
+# 1. 确保在微信公众平台配置了IP白名单
+# 2. 服务器地址：https://your-app-name.onrender.com/api/wechat
+# 3. Token：wechat_order_system_2024_token_abc123
+# 4. EncodingAESKey：abcdefghijklmnopqrstuvwxyz123456789012345678901 

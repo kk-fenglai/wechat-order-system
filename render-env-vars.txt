@@ -1,0 +1,65 @@
+# Render 环境变量配置
+# 复制以下内容到Render的环境变量配置中
+
+# ========================================
+# 必需的环境变量（必须配置）
+# ========================================
+
+# MongoDB数据库连接
+MONGODB_URI=mongodb+srv://wechat_admin:wechat_admin@cluster0.fkxi3rn.mongodb.net/wechat_order_system?retryWrites=true&w=majority&appName=Cluster0
+
+# 应用环境配置
+NODE_ENV=production
+PORT=10000
+HOST=0.0.0.0
+
+# JWT密钥
+JWT_SECRET=my_super_secret_jwt_key_2024
+
+# ========================================
+# 微信公众号配置（必需）
+# ========================================
+
+# 微信配置（占位符 - 部署后需要更新为真实值）
+WECHAT_APP_ID=temp_app_id
+WECHAT_APP_SECRET=temp_app_secret
+WECHAT_TOKEN=wechat_order_system_2024_token_abc123
+WECHAT_ENCODING_AES_KEY=abcdefghijklmnopqrstuvwxyz123456789012345678901
+
+# ========================================
+# 微信支付配置（可选）
+# ========================================
+
+# 微信支付商户配置
+WECHAT_MCH_ID=your_wechat_mch_id
+WECHAT_API_KEY=your_wechat_api_key
+WECHAT_CERT_PATH=path/to/your/cert.pem
+
+# ========================================
+# 邮件配置（可选）
+# ========================================
+
+# 邮件服务器配置
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_email_password
+
+# ========================================
+# 部署说明
+# ========================================
+
+# 1. 复制上述所有环境变量到Render的环境变量配置页面
+# 2. 将 "your_..." 替换为实际值
+# 3. 部署完成后，更新微信配置为真实值
+# 4. 微信服务器URL将是：https://your-app-name.onrender.com/api/wechat
+
+# ========================================
+# 真实微信配置示例（部署后更新）
+# ========================================
+
+# 部署完成后，将以下占位符替换为真实值：
+# WECHAT_APP_ID=wx1234567890abcdef
+# WECHAT_APP_SECRET=abcdef1234567890abcdef1234567890
+# WECHAT_TOKEN=wechat_order_system_2024_token_abc123
+# WECHAT_ENCODING_AES_KEY=abcdefghijklmnopqrstuvwxyz123456789012345678901 
