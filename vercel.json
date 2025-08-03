@@ -8,11 +8,11 @@
   ],
   "routes": [
     {
-      "src": "/api/wechat",
+      "src": "/api/(.*)",
       "dest": "/server.js"
     },
     {
-      "src": "/api/orders",
+      "src": "/health",
       "dest": "/server.js"
     },
     {
